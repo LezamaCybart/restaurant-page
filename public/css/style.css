@@ -1,0 +1,9 @@
+body {
+    background-color: blanchedalmond;
+}
+#content {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    background-color: burlywood;
+}
