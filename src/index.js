@@ -1,7 +1,8 @@
-import { initializeDomElements } from "./pageLoad";
+import { populateHome } from "./home";
+import { initializeDomElements } from "./template";
 
 window.onload = () => {
-    initializeDomElements();
+    initializeDomElements(populateHome);
 }
 
 console.log("working");

@@ -1,6 +1,4 @@
-const initializeDomElements = () => {
-    let contentDiv = document.getElementById("content");
-
+const populateHome = (contentDiv) => {
     let banner = document.createElement("img");
     banner.src = "../public/images/banner.jpg";
 
@@ -15,7 +13,6 @@ const initializeDomElements = () => {
     contentDiv.appendChild(banner);
     contentDiv.appendChild(header);
     contentDiv.appendChild(description);
-};
+}
 
-
-export { initializeDomElements };
+export { populateHome };
