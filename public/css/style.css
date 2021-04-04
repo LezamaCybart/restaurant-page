@@ -46,3 +46,20 @@ body {
    color: white;
    text-align: center;
 }
+
+.menugrid {
+  display: grid;
+  background-color: blueviolet;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
+  gap: 5px 5px;
+}
+
+.griditem {
+  background-color: cadetblue;
+}
+
+.gridimage {
+  width: 100%;
+  height: auto;
+}

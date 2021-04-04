@@ -44,8 +44,13 @@ const createFooter = (() => {
 const initializeDomElements = (populateTab) => {
     let contentDiv = document.getElementById("content");
 
+    let banner = document.createElement("img");
+    banner.src = "../public/images/banner.jpg";
+
+
     contentDiv.appendChild(createTabs.tabsDiv);
 
+    contentDiv.appendChild(banner);
     contentDiv.appendChild(createFooter.footer);
 
     populateTab(contentDiv);
