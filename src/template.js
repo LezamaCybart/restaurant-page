@@ -51,9 +51,10 @@ const initializeDomElements = (populateTab) => {
     contentDiv.appendChild(createTabs.tabsDiv);
 
     contentDiv.appendChild(banner);
+    populateTab(contentDiv);
     contentDiv.appendChild(createFooter.footer);
 
-    populateTab(contentDiv);
+
 };
 
 

@@ -1,10 +1,14 @@
 body {
     background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #content {
+  flex: 1 1 auto;  /*grow vertically*/
     margin: auto;
     text-align: center;
-    width: 50%;
+    width: 100%;
     background-color: burlywood;
 }
 
@@ -18,7 +22,7 @@ body {
 /* Style the buttons inside the tab */
 .tab button {
   background-color: inherit;
-  float: left;
+  float: center;
   border: none;
   outline: none;
   cursor: pointer;
@@ -38,7 +42,7 @@ body {
 }
 
 .footer {
-   position: fixed;
+   position: relative;
    left: 0;
    bottom: 0;
    width: 100%;
@@ -48,6 +52,7 @@ body {
 }
 
 .menugrid {
+  justify-content: center;
   display: grid;
   background-color: blueviolet;
   grid-template-columns: repeat(3, 200px);
@@ -62,4 +67,9 @@ body {
 .gridimage {
   width: 100%;
   height: auto;
+}
+
+.contact {
+  background-color: cadetblue;
+  text-align: center;
 }
